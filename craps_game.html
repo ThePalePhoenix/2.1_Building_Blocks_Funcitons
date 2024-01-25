@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The following script links in the .js file so that the "dice" function can be called.-->
+    <script src="craps.js"></script>
+    <link rel="stylesheet" href="craps.css">
+    <title>A Game of Craps</title>
+</head>
+<body>
+    <h1>Simplified Craps</h1>
+    <p id = "dice">The numbers you roll will appear below.</p>
+    <!--The following image tags are where the dice being rolled would appear.
+    They are identified as die1 and die2 to allow the JS file a unique tag to grab and write to.-->
+    <img id="die1" src=" " alt="Dice A">
+    <img id="die2" src=" " alt="Dice B">
+    <br>
+    <!--This paragraph was created solely to display the total of the rolled dice and has been ID'd appropriately-->
+    <p id = "total">Total:</p>
+    <br>
+    <!--This paragraph is meant to show whether or not you won the roll.-->
+    <p id = "result">Awaiting Results...</p>
+    <br>
+    <!--This is a button meant to call the singular JS funtion.
+    The function, described in the .js file, will "roll the dice".
+    The dice can be rolled as many times as you want.-->
+    <button type="button" onclick="dice()">Roll the Dice</button>
+    <hr>
+    <!--The following information is provided as this game of Craps is different from the games that may be played in a casino.
+    The primary reference for these rules is the Wikipedia page for Craps.
+    Additional references are available on different sites, some for casinos.-->
+    <h1>Craps Rules</h1>
+    <p id="rules">The rules for this game of craps
+        is you win on even doubles and lose on a 7 or 11.</p>
+    <p id="real rules">In a real game of Craps, the ruleset used here would
+        be a simplified version of hard betting in Craps. Generally, bets
+        are made on whether or not a 7 or 11 would roll. There are further
+        bets on if a 7 or 11 would be rolled before or after a non-7/11
+        roll is made. For clarification of these rules and further detail,
+        please refer to the following link:
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Craps" target="_blank">Craps on Wikipedia</a>
+</body>
+</html>
